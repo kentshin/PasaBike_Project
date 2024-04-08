@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:id="@+id/amount_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/aldrich"
+            android:text="Total Amount :" />
+
+        <EditText
+            android:id="@+id/amnt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/textView11"
+            android:background="#DFECD1"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:hint="00.00"
+            android:inputType="number|numberDecimal"
+            android:padding="5dp"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/update_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/amount_holder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#63B567"
+        android:fontFamily="@font/aldrich"
+        android:text="Update"
+        app:cornerRadius="20dp" />
+</RelativeLayout>

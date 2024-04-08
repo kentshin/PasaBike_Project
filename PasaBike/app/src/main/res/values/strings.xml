@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PasaBike</string>
+
+    <string-array name="store_list">
+        <item>Select Store</item>
+        <item>Alfamart</item>
+        <item>7-11</item>
+        <item>South Emerald</item>
+        <item>PureGold</item>
+        <item>Goodwill Mart</item>
+        <item>M and W</item>
+        <item>Jollibee</item>
+        <item>McDonalds</item>
+        <item>Chowking</item>
+        <item>Mang Inasal</item>
+        <item>KFC</item>
+        <item>Shakeys</item>
+        <item>Goldilucks</item>
+        <item>Red Ribbon</item>
+        <item>Public Market</item>
+        <item>Sunstar WalterMart</item>
+        <item>Metro Robinsons Supermart</item>
+        <item>Savemore Market</item>
+        <item>Any Store</item>
+    </string-array>
+
+
+
+    <string-array name="report_reason">
+        <item>Select Report Reason</item>
+        <item>Damage Received Items</item>
+        <item>Items Undelivered</item>
+        <item>Courrier not Following Order/Delivery Form</item>
+        <item>Courrier Inappropraite Behavior</item>
+        <item>Courrier Overcharging</item>
+        <item>Courrier Unattended</item>
+        <item>Other Bad Experience with the Courrier</item>
+
+    </string-array>
+
+
+
+
+</resources>

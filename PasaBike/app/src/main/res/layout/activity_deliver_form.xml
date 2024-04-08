@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round"
+    tools:context=".Deliver_form">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_clear">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/oder_form"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_clear"
+            android:elevation="5dp">
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="false"
+                tools:context=".map" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/padeliver" />
+
+        <RelativeLayout
+            android:id="@+id/oder_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/label_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/bikes" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/imageView3"
+                    android:fontFamily="@font/aldrich"
+                    android:text="PADELIVER FORM"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_head"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_with_bg"
+                android:elevation="5dp">
+
+                <Button
+                    android:id="@+id/create_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/items_delivered"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#C6CF6A"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Request Deliver"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+                <EditText
+                    android:id="@+id/recipient"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_clear"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="Recipient Full Name"
+                    android:paddingStart="10dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/items_delivered"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recipient_addres"
+                    android:layout_alignStart="@id/recipient"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_clear"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="Items to be deliver"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:singleLine="false"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/recipient_addres"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recipient"
+                    android:layout_alignStart="@id/recipient"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_clear"
+                    android:enabled="false"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center_vertical"
+                    android:hint="Recipient Address"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="2"
+                    android:paddingStart="10dp"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

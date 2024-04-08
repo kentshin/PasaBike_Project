@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/oder_request"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Order Request" />
+
+    <item
+        android:id="@+id/order_status"
+        android:icon="@drawable/ic_baseline_shopping_bag_24"
+        android:title="Order Status" />
+
+    <item
+        android:id="@+id/order_history"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="History" />
+
+</menu>
